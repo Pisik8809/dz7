@@ -18,5 +18,9 @@ function ready() {
      car.style.left = 700 +'px';
      console.log(car.style.left);
    }
+   function cancel() {
+     car.style.left = 10 +'px';
+   }
+   setTimeout(cancel, 3500);
  }
 }
