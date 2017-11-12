@@ -19,8 +19,13 @@ function ready() {
      console.log(car.style.left);
    }
    function cancel() {
+     car.style.transform = 'rotateY(180deg)';
      car.style.left = 10 +'px';
    }
    setTimeout(cancel, 3500);
+   function reset() {
+     car.style.transform = 'rotateY(0deg)';
+   }
+   setTimeout(reset, 5000);
  }
 }
